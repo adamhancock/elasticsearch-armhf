@@ -27,5 +27,5 @@ RUN mkdir jdk && \
     ln -s /usr/bin/java jdk/bin/java
 EXPOSE 9200
 EXPOSE 9300
-RUN sysctl -w vm.max_map_count=262144
+# sysctl -w vm.max_map_count=262144
 ENTRYPOINT ["bin/elasticsearch"]
